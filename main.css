@@ -1,0 +1,82 @@
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Comfortaa',cursive;
+}
+
+.fa{
+    font-size: 1.5em !important;
+    margin-right: 10px;
+}
+
+#close-nav{
+    font-size: 2.5em;
+    position: absolute;
+    color: black;
+    display: none;
+    left: -30px;
+    cursor: pointer;
+}
+#container{
+    height:720px;
+    width: 100%;
+    color:black;
+    background: linear-gradient(to right, #007991,#78ffd6);
+}
+
+#card1,#card2,#card3,#card4{
+    width:50% !important;
+    margin: 0 auto;
+}
+.ui.two.column.grid{
+    position: relative;
+    z-index:-1000;
+    background: linear-gradient(to right, #007991,#78ffd6);
+}
+#column1,#column2,#column3,#column4{
+    text-align: center;
+}
+.row{
+    margin-top:5%;
+    margin-bottom: 5%;
+}
+
+.header #background{
+    background-color:yellow;
+    display:none;
+    z-index:10000;
+}
+#map{
+    height: 600px;
+    width:65%;
+    float:left;
+    position: relative;
+    margin-left:0.5%;
+    border:2px solid grey;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.map-wrapper{
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background: linear-gradient(to right, #007991,#78ffd6);
+}
+.map-sidebar{
+    width:34%;
+    margin-right: 0.5%;
+    height:600px;
+    position: relative;
+    float:right;
+    background: linear-gradient(to right, #007991,#78ffd6);
+    border:2px solid grey;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.story{
+    font-family: 'Comfortaa',cursive;
+    color: black;
+}
+.story:hover{
+    color:black;
+}

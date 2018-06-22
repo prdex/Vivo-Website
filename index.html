@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Temp</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./navbar.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="tempvideo.css">
+    <link rel="stylesheet" type="text/css" href="partnerCss.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script src="./griddler/js/jquery.gridder.js"></script>
+</head>
+
+<body>
+    <div class="navbar navbar-fixed">
+        <nav>
+            <div class="nav-wrapper" id="navwrap">
+                <a href="#"><img src="logo.png" id="brand-logo" style="position: absolute;top:0;left:0;height:56px;"></a>
+                <a href="#" data-target="mobile-demo" class="right sidenav-trigger">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <ul class="right hide-on-med-and-down">
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">3D content</a>
+                    </li>
+                    <li>
+                        <a href="#">Product</a>
+                    </li>
+                    <li>
+                        <a href="#">Team</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="sidenav right-aligned" id="mobile-demo">
+            <a onclick="$('.sidenav').sidenav('close')" id="close-nav">&times;</a>
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">3D Content</a>
+                </li>
+                <li>
+                    <a href="#">Product</a>
+                </li>
+                <li>
+                    <a href="#">Team</a>
+                </li>
+                <li>
+                    <a href="#">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+            <div class="sidenav-overlay" style="display: none; opacity: 0;"></div>
+    </div>
+    <div id="container">
+    </div>
+        <div class="ui two column grid">
+            <div class="row">
+                    <div class="column" id="column1">
+                            <div class="ui raised link card" id="card1">
+                                     <div class="image">
+                                        <img src="Z.gif"> 
+                                     </div>
+                            </div>
+                        </div>
+                      
+                        <div class="column" id="column2">
+                              <div class="ui raised link card" id="card2">
+                                    <div class="image">
+                                        <img src="3.jpeg">
+                                     </div>
+                                </div>
+                        </div>
+            </div>
+            <div class="row">
+                    <div class="column" id="column3">
+                            <div class="ui raised link card" id="card3">
+                                    <div class="image">
+                                        <img src="3.jpeg">
+                                     </div>
+                            </div>
+                        </div>
+                      
+                        <div class="column" id="column4">
+                              <div class="ui raised link card" id="card4">
+                                    <div class="image">
+                                        <img src="3.jpeg">
+                                     </div>
+                                </div>
+                        </div>
+            </div>
+        </div>
+                <div class="ui modal" id="modal1">
+                    <i class="close icon"></i>
+                    <div class="image content">
+                        <div class="ui medium image">
+                             <img src="Z.gif">
+                        </div>
+                        <div class="description">
+                            <div class="ui header">VD-Mono Z-shaped</div>
+                            <p><ul>
+                                <li>Office displays</li>
+                                <li>Portable for presentations</li>    
+                                <li>Mid air floating 3D effect</li>    
+                                <li>Available in 22", 32", 42"*, 55"*</li>     
+                                <li>Animated 3D effect of the product/Ad</li>
+                            </ul></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="ui modal" id="modal2">
+                        <i class="close icon"></i>
+                        <div class="image content">
+                            <div class="ui medium image">
+                                 <img src="abc.png">
+                            </div>
+                            <div class="description">
+                                <div class="ui header">We've auto-chosen a profile image for you.</div>
+                                <p>We've grabbed the following image from the <a href="https://www.gravatar.com" target="_blank">gravatar</a> image associated with your registered e-mail address.</p>
+                                <p>Is it okay to use this photo?</p>
+                            </div>
+                        </div>
+                </div>
+        
+                <div class="ui modal" id="modal3">
+                        <i class="close icon"></i>
+                        <div class="image content">
+                            <div class="ui medium image">
+                                 <img src="abc.png">
+                            </div>
+                            <div class="description">
+                                <div class="ui header">We've auto-chosen a profile image for you.</div>
+                                <p>We've grabbed the following image from the <a href="https://www.gravatar.com" target="_blank">gravatar</a> image associated with your registered e-mail address.</p>
+                                <p>Is it okay to use this photo?</p>
+                            </div>
+                        </div>
+                </div>
+        
+                <div class="ui modal" id="modal4">
+                        <i class="close icon"></i>
+                        <div class="image content">
+                            <div class="ui medium image">
+                                 <img src="abc.png">
+                            </div>
+                            <div class="description">
+                                <div class="ui header">We've auto-chosen a profile image for you.</div>
+                                <p>We've grabbed the following image from the <a href="https://www.gravatar.com" target="_blank">gravatar</a> image associated with your registered e-mail address.</p>
+                                <p>Is it okay to use this photo?</p>
+                            </div>
+                        </div>
+                </div>
+     <!-- <div id="video-wrapper">
+        <ul class="gridder">
+            <li class="gridder-list" data-griddercontent="#content1" id="lione">
+                <img src="3.jpeg" class="placeimg"/>
+            </li>
+           > -->
+        <div id="vidwrapper">
+            <div id="video1wrapper">
+                    <video controls src="https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4" 
+                        id="video1"></video>
+                </div>
+        </div>
+            
+
+            <!-- <div id="video2wrapper">
+                <video controls src="https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4" poster="https://peach.blender.org/wp-content/uploads/title_anouncement.jpg?x11217"
+                    id="video2">
+             </div> -->
+
+    <div class="map-wrapper">
+         <div id="map"></div>
+
+         <div class="map-sidebar">
+             <ul>
+                 <li><a  class="story">The Ellis Bridge Gymkhana,near law garden</a></li>
+             </ul>
+            <div class="story" data-point="40.7451, -73.949">Second link</div>
+        </div>
+    </div>
+
+    <div class="customer-logos">
+        <div class="slide"><img src="1.png"></div>
+        <div class="slide"><img src="2.png"></div>
+        <div class="slide"><img src="3.png"></div>
+        <div class="slide"><img src="4.png"></div>
+        <div class="slide"><img src="5.png"></div>
+        <div class="slide"><img src="6.png"></div>
+        <div class="slide"><img src="7.png"></div>
+        <div class="slide"><img src="8.png"></div>
+      </div>
+
+  
+</body>
+<script>
+        $("#card1").click(function(){
+                $("#modal1").modal('show');
+        });
+        $("#card2").click(function(){
+                $("#modal1").modal('show');
+        });
+        $("#card3").click(function(){
+            $("#modal3").modal('show');
+        });
+        $("#card4").click(function(){
+            $("#modal4").modal('show');
+        });
+</script>    
+<script src="script.js"></script>
+<script src="video.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-0WZ-ZikjjVlB0wyWbfmrIEVJc6KjZ0E&callback=initMap"async defer></script>
+<script src="mapsJs.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+<script src="partner.js"></script>
+<!-- video accordion plugin by https://github.com/oriongunning/gridder -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.js"></script>
+
+
+</script>
+</html>
