@@ -6,11 +6,6 @@ body{
     font-family: 'Comfortaa',cursive;
 }
 
-.fa{
-    font-size: 1.5em !important;
-    margin-right: 10px;
-}
-
 #close-nav{
     font-size: 2.5em;
     position: absolute;
@@ -79,4 +74,82 @@ body{
 }
 .story:hover{
     color:black;
+}
+.footer{
+    width:100%;
+    height: 400px;
+    background-image: url("footer-background.jpg");
+}
+.footer-container{
+    margin-right: 25px;
+    margin-left: 25px;
+    height: 90%;
+    padding-top:50px;
+    
+}
+.footer-right{
+    padding:15px;
+    width: auto;
+    height: 100%;
+    float:left;
+}
+#bottom-logo{
+    margin-top:-20px;
+}
+#emailicon{
+    font-size: 2.4em;
+    margin-right: 10px;
+    float:left;
+}
+.e-mail-wrapper{
+    width:auto;
+    height:2.5em;
+    margin-left:17%;
+    margin-top:7%;
+}
+#emailcontent{
+    font-size:2.4em;
+    padding-right:5px;
+    padding: 15px;
+    padding-bottom:5px;
+    padding-left:60px;
+    color:white;
+    line-height:0 !important;
+}
+.phone-wrapper{
+    width:auto;
+    height:2.5em;
+    margin-top:7%;
+    margin-left: 17%
+}
+#phoneicon{
+    font-size:2.7em;
+    float:left;
+    line-height: 0 !important;
+}
+#phonecontent{
+    font-size:2.0em;
+    padding-bottom:5px;
+    padding-right:5px;
+    padding-left:60px;
+    color:white;
+    line-height: 0px;
+}
+#first-vertical-line{
+    height:inherit;
+    width:2px;
+    background-color:whitesmoke;
+    margin-left:40%;
+}
+.footer-middle{
+    padding:15px;
+    width: 33%;
+    height: 100%;
+    float:left;
+}
+#second-vertical-line{
+    height:inherit;
+    width:2px;
+    background-color:whitesmoke;
+    margin-left:70%;
 }
