@@ -139,7 +139,7 @@ body{
     height:inherit;
     width:2px;
     background-color:whitesmoke;
-    margin-left:40%;
+    float:left;
 }
 .footer-middle{
     padding:15px;
@@ -147,9 +147,26 @@ body{
     height: 100%;
     float:left;
 }
+h2{
+    font-size:2.0em;
+}
 #second-vertical-line{
     height:inherit;
     width:2px;
     background-color:whitesmoke;
-    margin-left:70%;
+    margin-left:80%;
+}
+#footer-bottom-list{
+    font-size:1.8em;
+    line-height: 1.8em;
+    list-style-type: none;
+}
+.footer-white{
+    color:white;
+}
+.footer-left{
+    width:33%;
+    height:100%;
+    padding:15px;
+    background-color:red;
 }
