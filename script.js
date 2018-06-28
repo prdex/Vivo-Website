@@ -1,5 +1,6 @@
 const hideClose = () =>{
     $('#close-nav').css({'display':'none'});
+    console.log("closed");
 }
 
 const showClose = () =>{
