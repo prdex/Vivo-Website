@@ -6,6 +6,7 @@ body {
 
 .grid-container * {
     border: 1px solid #ccc;
+    grid-gap: 1em;
 }
 
 .grid-container div:after {
@@ -23,11 +24,27 @@ body {
     height: 100%;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas: 'box1 box1 box1 box2 box3 box3 box3' 'box1 box1 box1 box2 box3 box3 box3' 'box1 box1 box1 box2 box3 box3 box3' 'box1 box1 box1 box2 box3 box3 box3' 'box1 box1 box1 box2 box3 box3 box3' 'box1 box1 box1 box2 box3 box3 box3' 'box1 box1 box1 box2 box3 box3 box3' 'box1 box1 box1 box2 box7 box7 box7' 'box4 box5 box6 box6 box7 box7 box7' 'box4 box5 box6 box6 box7 box7 box7' 'box4 box5 box6 box6 box7 box7 box7' 'box4 box5 box6 box6 box7 box7 box7' 'box4 box5 box6 box6 box7 box7 box7';
+    grid-template-areas: 'box1 box1 box1 box2 box3 box3 box3' 
+                         'box1 box1 box1 box2 box3 box3 box3' 
+                         'box1 box1 box1 box2 box3 box3 box3' 
+                          'box1 box1 box1 box2 box3 box3 box3' 
+                          'box1 box1 box1 box2 box3 box3 box3' 
+                          'box1 box1 box1 box2 box3 box3 box3' 
+                          'box1 box1 box1 box2 box3 box3 box3' 
+                          'box1 box1 box1 box2 box7 box7 box7' 
+                          'box4 box5 box6 box6 box7 box7 box7' 
+                          'box4 box5 box6 box6 box7 box7 box7' 
+                          'box4 box5 box6 box6 box7 box7 box7' 
+                          'box4 box5 box6 box6 box7 box7 box7' 
+                          'box4 box5 box6 box6 box7 box7 box7';
 }
-
+.video-wrapper{
+    height:700px;
+    width: 100%;
+}
 .box1 {
     grid-area: box1;
+    background-color: red;
 }
 
 .box2 {
@@ -53,3 +70,107 @@ body {
 .box7 {
     grid-area: box7;
 }
+
+.footer{
+    width: 100%;
+    height:400px;
+    background-image:url("footer-background.jpg");
+}
+.grid-container-footer {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "paddintop paddintop paddintop paddintop paddintop paddintop paddintop paddintop"
+                         "paddingleft bottom-logo bottom-logo menu menu . . paddingright" 
+                         "paddingleft bottom-logo bottom-logo menu menu . . paddingright" 
+                         "paddingleft bottom-logo bottom-logo home home social social paddingright" 
+                         "paddingleft bottom-logo bottom-logo content content social social paddingright" 
+                         "paddingleft bottom-logo bottom-logo product product social social paddingright" 
+                         "paddingleft . . product product social social paddingright" 
+                         "paddingleft email email team team social social paddingright" 
+                         "paddingleft phone phone contanctus contanctus . . paddingright" 
+                         "paddingleft . . . . . . paddingright" "paddingleft . . . . . . paddingright" 
+                         "paddingbottom paddingbottom paddingbottom paddingbottom paddingbottom paddingbottom paddingbottom paddingbottom";
+  }
+  
+  #logobot{
+      width:100%;
+      height:auto;
+  }
+  #emailicon{
+      float:left;
+      font-size:2.5em;
+    }
+#emailcontent{
+    font-size:2.0em;
+    padding-left:60px;
+    color:white;
+}
+#phoneicon{
+    font-size:2.5em;
+    padding-top:20px;
+    padding-left:5px;
+    float:left;
+}
+#phonecontent{
+    font-size:2.0em;
+    padding-left:60px;
+    padding-top:17px;
+    color:white;
+}
+  .paddingleft {
+    grid-area: paddingleft;
+  }
+  
+  .bottom-logo {
+    grid-area: bottom-logo;
+  }
+  
+  .email {
+    grid-area: email;
+  }
+  
+  .phone {
+    grid-area: phone;
+  }
+  
+  .menu {
+    grid-area: menuz;
+  }
+  
+  .paddintop {
+    grid-area: paddintop;
+  }
+  
+  .paddingbottom {
+    grid-area: paddingbottom;
+  }
+  
+  .home {
+    grid-area: home;
+  }
+  
+  .content {
+    grid-area: content;
+  }
+  
+  .product {
+    grid-area: product;
+  }
+  
+  .team {
+    grid-area: team;
+  }
+  
+  .contanctus {
+    grid-area: contanctus;
+  }
+  
+  .paddingright {
+    grid-area: paddingright;
+  }
+  
+  .social {
+    grid-area: social;
+  }

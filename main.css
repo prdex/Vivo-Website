@@ -74,7 +74,7 @@ body{
 .story:hover{
     color:black;
 }
-.footer{
+/* .footer{
     width:100%;
     height: 400px;
     background-image: url("footer-background.jpg");
@@ -168,4 +168,4 @@ h2{
     height:100%;
     padding:15px;
     background-color:red;
-}
+} */
