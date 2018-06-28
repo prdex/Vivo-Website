@@ -100,23 +100,25 @@ body {
   }
   #emailicon{
       float:left;
-      font-size:2.5em;
+      font-size :2.6vw;
+      padding-top:5.0vh;
     }
 #emailcontent{
-    font-size:2.0em;
-    padding-left:60px;
+    font-size:2.2vw;
+    padding-left:4.5vw;
     color:white;
+    padding-top: 3.5vh;
 }
 #phoneicon{
-    font-size:2.5em;
-    padding-top:20px;
-    padding-left:5px;
+    font-size:2.8vw;
+    padding-top:5vh;
+    padding-left:0.2vw;
     float:left;
 }
 #phonecontent{
-    font-size:2.0em;
-    padding-left:60px;
-    padding-top:17px;
+    font-size:2.0vw;
+    padding-left:4.5vw;
+    padding-top:4.5vh;
     color:white;
 }
   .paddingleft {
@@ -136,7 +138,7 @@ body {
   }
   
   .menu {
-    grid-area: menuz;
+    grid-area: menu;
   }
   
   .paddintop {
