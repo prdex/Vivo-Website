@@ -17,11 +17,13 @@ body{
 #backima{
     height:700px;
     width: 100%;
+    
     background: url("back-gif.gif") no-repeat center;
     -webkit-background-size: contain;
     -moz-background-size: contain;
     -o-background-size: contain;
-    background-size: 100%;
+    -moz-background-size:100% 100%; /* Firefox 3.6 */
+    background-size:100% 100%;
 }
 
 #card1,#card2,#card3,#card4{
