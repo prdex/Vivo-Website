@@ -82,15 +82,15 @@ body {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: "paddintop paddintop paddintop paddintop paddintop paddintop paddintop paddintop"
-                         "paddingleft bottom-logo bottom-logo menu menu . . paddingright" 
-                         "paddingleft bottom-logo bottom-logo menu menu . . paddingright" 
+                         "paddingleft bottom-logo bottom-logo menu menu social social paddingright" 
+                         "paddingleft bottom-logo bottom-logo menu menu social social paddingright" 
                          "paddingleft bottom-logo bottom-logo home home social social paddingright" 
                          "paddingleft bottom-logo bottom-logo content content social social paddingright" 
                          "paddingleft bottom-logo bottom-logo product product social social paddingright" 
-                         "paddingleft . . product product social social paddingright" 
                          "paddingleft email email team team social social paddingright" 
                          "paddingleft phone phone contanctus contanctus . . paddingright" 
-                         "paddingleft . . . . . . paddingright" "paddingleft . . . . . . paddingright" 
+                         "paddingleft . . . . . . paddingright" 
+                         "paddingleft . . . . . . paddingright" 
                          "paddingbottom paddingbottom paddingbottom paddingbottom paddingbottom paddingbottom paddingbottom paddingbottom";
   }
   
@@ -101,25 +101,29 @@ body {
   #emailicon{
       float:left;
       font-size :2.6vw;
-      padding-top:5.0vh;
+    
+      /* padding-top:5.0vh; */
     }
 #emailcontent{
     font-size:2.2vw;
     padding-left:4.5vw;
     color:white;
-    padding-top: 3.5vh;
+    line-height: 0px !important;
+    /* padding-top: 3.5vh; */
 }
 #phoneicon{
     font-size:2.8vw;
     padding-top:5vh;
     padding-left:0.2vw;
     float:left;
+    line-height: 0px;
 }
 #phonecontent{
     font-size:2.0vw;
     padding-left:4.5vw;
     padding-top:4.5vh;
     color:white;
+    line-height: 0px;
 }
   .paddingleft {
     grid-area: paddingleft;
@@ -139,10 +143,13 @@ body {
   
   .menu {
     grid-area: menu;
+    line-height:0px !important;
+    padding-left:6vw;
   }
   
   .paddintop {
     grid-area: paddintop;
+    
   }
   
   .paddingbottom {
@@ -151,6 +158,7 @@ body {
   
   .home {
     grid-area: home;
+    
   }
   
   .content {
@@ -175,4 +183,16 @@ body {
   
   .social {
     grid-area: social;
+  }
+  .home,.content,.product,.team,.contanctus{
+    line-height:0px !important;
+    color:white;
+    padding-left:6vw;
+    font-size:1.6vw;
+  }
+  #footer-list{
+      list-style-type: none;
+      line-height:7.5vh;
+      font-size:2.5vw;
+      line-height: 3.5vw;
   }

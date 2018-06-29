@@ -14,10 +14,14 @@ body{
     left: -30px;
     cursor: pointer;
 }
-#container{
+#backima{
     height:700px;
     width: 100%;
-    color:black;
+    background: url("back-gif.gif") no-repeat center;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: 100%;
 }
 
 #card1,#card2,#card3,#card4{
@@ -74,98 +78,3 @@ body{
 .story:hover{
     color:black;
 }
-/* .footer{
-    width:100%;
-    height: 400px;
-    background-image: url("footer-background.jpg");
-}
-.footer-container{
-    margin-right: 25px;
-    margin-left: 25px;
-    height: 90%;
-    padding-top:50px;
-    
-}
-.footer-right{
-    padding:15px;
-    width: auto;
-    height: 100%;
-    float:left;
-}
-#bottom-logo{
-    margin-top:-20px;
-}
-#emailicon{
-    font-size: 2.4em;
-    margin-right: 10px;
-    float:left;
-}
-.e-mail-wrapper{
-    width:auto;
-    height:2.5em;
-    margin-left:17%;
-    margin-top:7%;
-}
-#emailcontent{
-    font-size:2.4em;
-    padding-right:5px;
-    padding: 15px;
-    padding-bottom:5px;
-    padding-left:60px;
-    color:white;
-    line-height:0 !important;
-}
-.phone-wrapper{
-    width:auto;
-    height:2.5em;
-    margin-top:7%;
-    margin-left: 17%
-}
-#phoneicon{
-    font-size:2.7em;
-    float:left;
-    line-height: 0 !important;
-}
-#phonecontent{
-    font-size:2.0em;
-    padding-bottom:5px;
-    padding-right:5px;
-    padding-left:60px;
-    color:white;
-    line-height: 0px;
-}
-#first-vertical-line{
-    height:inherit;
-    width:2px;
-    background-color:whitesmoke;
-    float:left;
-}
-.footer-middle{
-    padding:15px;
-    width: 33%;
-    height: 100%;
-    float:left;
-}
-h2{
-    font-size:2.0em;
-}
-#second-vertical-line{
-    height:inherit;
-    width:2px;
-    background-color:whitesmoke;
-    margin-left:80%;
-}
-#footer-bottom-list{
-    font-size:1.8em;
-    line-height: 1.8em;
-    list-style-type: none;
-}
-.footer-white{
-    color:white;
-}
-.footer-left{
-    width:33%;
-    height:100%;
-    padding:15px;
-    background-color:red;
-} */
