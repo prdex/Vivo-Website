@@ -30,7 +30,16 @@ nav .brand-logo {
     font-size: 2.1rem;
     padding: 0;
 }
-
+#brand-logo{
+    position:relative;
+    top:2vh;
+    left:2vw;
+    height:70px;
+}
+#main-nav{
+    padding-right: 27vw;
+    padding-top :2vh;
+}
 nav ul {
     margin: 0
 }
