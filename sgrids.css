@@ -108,7 +108,6 @@ body {
   flex-flow: row wrap;
   align-content: flex-start;
   justify-content: space-around;
-  align-items: flex-start;
   
 }
 .item1,.item2,.item3,.item4,.item5,.item6,.item7{
@@ -118,6 +117,7 @@ body {
 -moz-box-shadow: inset 0 1px #fff, 0 1px 3px rgba(34,25,25,0.4);
 -webkit-box-shadow: inset 0 1px #fff, 0 1px 3px rgba(34,25,25,0.4);
 border-radius: 5px;
+flex: auto;
 }
 .item1{
     background-color: orange;
@@ -164,124 +164,145 @@ border-radius: 5px;
     width: 100%;
     height:400px;
     background-image:url("footer-background.jpg");
-}
-.grid-container-footer {
+    grid-template-columns: 1fr 1fr 1fr;
     display: grid;
-    height: 100%;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas: "paddintop paddintop paddintop paddintop paddintop paddintop paddintop paddintop"
-                         "paddingleft bottom-logo bottom-logo menu menu social social paddingright" 
-                         "paddingleft bottom-logo bottom-logo menu menu social social paddingright" 
-                         "paddingleft bottom-logo bottom-logo home home social social paddingright" 
-                         "paddingleft bottom-logo bottom-logo content content social social paddingright" 
-                         "paddingleft bottom-logo bottom-logo product product social social paddingright" 
-                         "paddingleft email email team team social social paddingright" 
-                         "paddingleft phone phone contanctus contanctus . . paddingright" 
-                         "paddingleft . . . . . . paddingright" 
-                         "paddingleft . . . . . . paddingright" 
-                         "paddingbottom paddingbottom paddingbottom paddingbottom paddingbottom paddingbottom paddingbottom paddingbottom";
-  }
-  
-  #logobot{
-      width:100%;
-      height:auto;
-  }
-  #emailicon{
-      float:left;
-      font-size :2.6vw;
-    
-      /* padding-top:5.0vh; */
-    }
-#emailcontent{
-    font-size:2.2vw;
-    padding-left:4.5vw;
-    color:white;
-    line-height: 0px !important;
-    /* padding-top: 3.5vh; */
 }
-#phoneicon{
-    font-size:2.8vw;
-    padding-top:5vh;
-    padding-left:0.2vw;
+.first-part{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    line-height: 0px;
+    padding-top: 10vh;
+}
+.second-part{
+    line-height: 0px;
+    padding-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.third-part{
+    line-height: 0px;
+    padding-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+#logo-image{
+    height:17vh;
+    padding-right: 5vw;
+}
+.email{
+    padding-top:0.6vw;
+    padding-left: 0.6vw;
+    padding-bottom: 0.6vw;
+}
+.fa.fa-envelope{
+    font-size: 2.0em;
     float:left;
-    line-height: 0px;
 }
-#phonecontent{
-    font-size:2.0vw;
-    padding-left:4.5vw;
-    padding-top:4.5vh;
-    color:white;
-    line-height: 0px;
+.fa.fa-phone{
+    font-size: 2.0em;
+    float:left;
 }
-  .paddingleft {
-    grid-area: paddingleft;
-  }
-  
-  .bottom-logo {
-    grid-area: bottom-logo;
-  }
-  
-  .email {
-    grid-area: email;
-  }
-  
-  .phone {
-    grid-area: phone;
-  }
-  
-  .menu {
-    grid-area: menu;
-    line-height:0px !important;
-    padding-left:6vw;
-  }
-  
-  .paddintop {
-    grid-area: paddintop;
-    
-  }
-  
-  .paddingbottom {
-    grid-area: paddingbottom;
-  }
-  
-  .home {
-    grid-area: home;
-    
-  }
-  
-  .content {
-    grid-area: content;
-  }
-  
-  .product {
-    grid-area: product;
-  }
-  
-  .team {
-    grid-area: team;
-  }
-  
-  .contanctus {
-    grid-area: contanctus;
-  }
-  
-  .paddingright {
-    grid-area: paddingright;
-  }
-  
-  .social {
-    grid-area: social;
-  }
-  .home,.content,.product,.team,.contanctus{
-    line-height:0px !important;
+#email-content{
+    font-size: 1.7em;
+    float:left;
+    padding-left:0.3em;
+    color: white;
+}
+#phone-content{
+    font-size: 1.7em;
+    float:left;
+    padding-left:0.3em;
+    color: white;
+}
+.menu, .social-media{
+    font-size:2.5em
+}
+.home,.team,.product,.d-content,.contact-us{
+    font-size:1.7em;
     color:white;
-    padding-left:6vw;
-    font-size:1.6vw;
-  }
-  #footer-list{
-      list-style-type: none;
-      line-height:7.5vh;
-      font-size:2.5vw;
-      line-height: 3.5vw;
-  }
+    padding:0.2em;
+}
+.face-icon,.twit-icon,.insta-icon,.youtube-icon{
+    font-size:1.7em;
+    padding:0.5em;
+    color: white;
+}
+p{
+    margin:0px;
+    line-height: 1em !important;
+}
+@media (max-width:720px){
+    .footer{
+    width: 100%;
+    height:500px;
+    background-image:url("footer-background.jpg");
+    grid-template-columns: 1fr;
+    flex-direction: column;
+    display: grid;
+    }
+    .first-part{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 0px;
+    padding:0px;
+    }
+    .second-part{
+    line-height: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:0px;
+    }
+.third-part{
+    line-height: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;   
+    padding:0px;
+    align-items: center;
+    }
+    #logo-image{
+        height:16vh;
+        padding-top: 0px;
+        width:auto;
+    }
+    .email{
+        padding:0.6vw;
+    }
+    .fa.fa-envelope{
+        font-size:2.0em;
+        float:left;
+    }
+    .fa.fa-phone{
+        font-size: 2.0em;
+        float:left;
+    }
+    .phone{
+        padding-right: 7vw;
+    }
+    #email-content{
+        font-size: 2.0em;
+        float:left;
+        padding-left:1.2vw;
+        color: white;
+    }
+    #phone-content{
+        font-size: 2.0em;
+        float:left;
+        padding-left:2.0vw;
+        color: white;
+    }
+    .social-icons{
+        display: flex;
+        flex-flow:row;
+    }
+    p{
+        margin:0px;
+        line-height: 1em !important;
+    }
+}
