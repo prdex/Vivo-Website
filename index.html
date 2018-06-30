@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="sgrids.css">
     <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-    crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="partnerCss.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -21,7 +21,9 @@
     <div class="navbar navbar-fixed">
         <nav>
             <div class="nav-wrapper" id="navwrap">
-                <a href="#"><img src="logo.png" id="brand-logo"></a>
+                <a href="#">
+                    <img src="logo.png" id="brand-logo">
+                </a>
                 <a href="#" data-target="mobile-demo" class="right sidenav-trigger">
                     <i class="fa fa-bars"></i>
                 </a>
@@ -42,13 +44,6 @@
                         <a href="#">Contact Us</a>
                     </li>
                 </ul>
-            </div>
-            <div class="social-top-wrapper">
-                <p>Follow Us</p>
-                <i class="facebook square icon"></i>
-                <i class="instagram icon"></i>
-                <i class="twitter icon"></i>
-                <i class="youtube icon"></i>
             </div>
         </nav>
         <div class="sidenav right-aligned" id="mobile-demo">
@@ -71,216 +66,262 @@
                 </li>
             </ul>
         </div>
-            <div class="sidenav-overlay" style="display: none; opacity: 0;"></div>
+        <div class="sidenav-overlay" style="display: none; opacity: 0;"></div>
     </div>
     <div id="backima">
     </div>
-        <div class="ui two column grid">
-            <div class="row">
-                    <div class="column" id="column1">
-                            <div class="ui raised link card" id="card1">
-                                     <div class="image">
-                                        <img src="Z.gif"> 
-                                     </div>
-                            </div>
-                        </div>
-                      
-                        <div class="column" id="column2">
-                              <div class="ui raised link card" id="card2">
-                                    <div class="image">
-                                        <img src="Z.gif">
-                                     </div>
-                                </div>
-                        </div>
-            </div>
-            <div class="row">
-                    <div class="column" id="column3">
-                            <div class="ui raised link card" id="card3">
-                                    <div class="image">
-                                        <img src="E.gif">
-                                     </div>
-                            </div>
-                        </div>
-                      
-                        <div class="column" id="column4">
-                              <div class="ui raised link card" id="card4">
-                                    <div class="image">
-                                        <img src="M.gif">
-                                     </div>
-                                </div>
-                        </div>
-            </div>
-        </div>
-                <div class="ui modal" id="modal1">
-                    <i class="close icon"></i>
-                    <div class="image content">
-                        <div class="ui medium image">
-                             <img src="Z.gif">
-                        </div>
-                        <div class="description">
-                            <div class="ui header">VD-Mono Z-shaped</div>
-                            <p><ul>
-                                <li>Office displays</li>
-                                <li>Portable for presentations</li>    
-                                <li>Mid air floating 3D effect</li>    
-                                <li>Available in 22", 32", 42"*, 55"*</li>     
-                                <li>Animated 3D effect of the product/Ad</li>
-                            </ul></p>
-                        </div>
+
+    <div class="ui two column grid">
+        <div class="row">
+            <div class="column" id="column1">
+                <div class="ui raised link card" id="card1">
+                    <div class="image">
+                        <img src="Z.gif">
                     </div>
                 </div>
-                
-                <div class="ui modal" id="modal2">
-                        <i class="close icon"></i>
-                        <div class="image content">
-                            <div class="ui medium image">
-                                 <img src="Z.gif">
-                            </div>
-                            <div class="description">
-                                <div class="ui header">We've auto-chosen a profile image for you.</div>
-                                <p>We've grabbed the following image from the <a href="https://www.gravatar.com" target="_blank">gravatar</a> image associated with your registered e-mail address.</p>
-                                <p>Is it okay to use this photo?</p>
-                            </div>
-                        </div>
-                </div>
-        
-                <div class="ui modal" id="modal3">
-                        <i class="close icon"></i>
-                        <div class="image content">
-                            <div class="ui medium image">
-                                 <img src="E.gif">
-                            </div>
-                            <div class="description">
-                                <div class="ui header">We've auto-chosen a profile image for you.</div>
-                                <p>We've grabbed the following image from the <a href="https://www.gravatar.com" target="_blank">gravatar</a> image associated with your registered e-mail address.</p>
-                                <p>Is it okay to use this photo?</p>
-                            </div>
-                        </div>
-                </div>
-        
-                <div class="ui modal" id="modal4">
-                        <i class="close icon"></i>
-                        <div class="image content">
-                            <div class="ui medium image">
-                                 <img src="M.gif">
-                            </div>
-                            <div class="description">
-                                <div class="ui header">We've auto-chosen a profile image for you.</div>
-                                <p>We've grabbed the following image from the <a href="https://www.gravatar.com" target="_blank">gravatar</a> image associated with your registered e-mail address.</p>
-                                <p>Is it okay to use this photo?</p>
-                            </div>
-                        </div>
-                </div>
-     
-                <div class="video-wrapper">
-                    <div class="grid-container">
-                        <div class="box1">
-                            <video  controls id="video1" poster="https://iandevlin.com/html5/poster/transparent.png">
-                                <source src="movie.mp4" type="video/mp4">
-                            </video>                                    
-                        </div>
-                        <div class="box2">
-                            <img src="1.jpg" id="img2">
-                        </div>
-                        <div class="box3">
-                                <video  controls id="video1">
-                                        <source src="movie.mp4" type="video/mp4">
-                                    </video>     
-                        </div>
-                        <div class="box4">
-                                <img src="1.jpg" id="img2">
-                        </div>
-                        <div class="box5">
-                                <img src="1.jpg" id="img2">
-                        </div>
-                        <div class="box6">
-                        </div>
-                        <div class="box7">
-                        </div>
-                      </div>
-                </div>
+            </div>
 
-<div class="ui container">
-    <div class="map-wrapper">
-         <div id="map"></div>
+            <div class="column" id="column2">
+                <div class="ui raised link card" id="card2">
+                    <div class="image">
+                        <img src="Z.gif">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column" id="column3">
+                <div class="ui raised link card" id="card3">
+                    <div class="image">
+                        <img src="E.gif">
+                    </div>
+                </div>
+            </div>
 
-         <div class="map-sidebar">
-             <ul>
-                 <li><a  class="story" onclick="zoies(23.0238201,72.5579489)">The Ellis Bridge Gymkhana,near law garden</a></li>
-             </ul>
-            <div class="story" data-point="40.7451, -73.949">Second link</div>
+            <div class="column" id="column4">
+                <div class="ui raised link card" id="card4">
+                    <div class="image">
+                        <img src="M.gif">
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-</div>
-    <div class="customer-logos">
-        <div class="slide"><img src="1.png"></div>
-        <div class="slide"><img src="2.png"></div>
-        <div class="slide"><img src="3.png"></div>
-        <div class="slide"><img src="4.png"></div>
-        <div class="slide"><img src="5.png"></div>
-        <div class="slide"><img src="6.png"></div>
-        <div class="slide"><img src="7.png"></div>
-        <div class="slide"><img src="8.png"></div>
-      </div>
-      
-
-        <div class="footer">
-                <div class="grid-container-footer">
-                  <div class="paddingleft">
-                  </div>
-                  <div class="bottom-logo">
-                        <img src="logo-footer.jpg" id="logobot">
-                  </div>
-                  <div class="email">
-                        <i class="fa fa-envelope-o" aria-hidden="true" id="emailicon"></i>
-                        <p id="emailcontent">sale@vivodesportes</p>
-                  </div>
-                  <div class="phone">
-                        <i class="fa fa-phone" id="phoneicon"></i>
-                        <p id="phonecontent">9687063521</p>
-                  </div>
-                  <div class="menu">
-                      <h1>Menu</h1>
-                  </div>
-                  <div class="paddintop">
-                  </div>
-                  <div class="paddingbottom">
-                  </div>
-                  <div class="home">
-                      <p>Home</p>
-                  </div>
-                  <div class="content">
-                      <p>3D Content</p>
-                  </div>
-                  <div class="product">
-                      <p>Product</p>
-                  </div>
-                  <div class="team">
-                      <p>Team</p>
-                  </div>
-                  <div class="contanctus">
-                      <p>Contact Us</p>
-                  </div>
-                  <div class="paddingright">
-                  </div>
-                  <div class="social">
-                      <h2>Social Media</h2>
-                      <ul id="footer-list">
-                            <li><i class="facebook square icon"></i></li>
-                            <li><i class="instagram icon"></i></li>
-                            <li><i class="twitter icon"></i></li>
-                            <li><i class="youtube icon"></i></li>
-                      </ul>
-                      
-                  </div>
-                </div>
+    <div class="ui modal" id="modal1">
+        <i class="close icon"></i>
+        <div class="image content">
+            <div class="ui medium image">
+                <img src="Z.gif">
+            </div>
+            <div class="description">
+                <div class="ui header">VD-Mono Z-shaped</div>
+                <p>
+                    <ul>
+                        <li>Office displays</li>
+                        <li>Portable for presentations</li>
+                        <li>Mid air floating 3D effect</li>
+                        <li>Available in 22", 32", 42"*, 55"*</li>
+                        <li>Animated 3D effect of the product/Ad</li>
+                    </ul>
+                </p>
+            </div>
         </div>
-  
+    </div>
+
+    <div class="ui modal" id="modal2">
+        <i class="close icon"></i>
+        <div class="image content">
+            <div class="ui medium image">
+                <img src="Z.gif">
+            </div>
+            <div class="description">
+                <div class="ui header">We've auto-chosen a profile image for you.</div>
+                <p>We've grabbed the following image from the
+                    <a href="https://www.gravatar.com" target="_blank">gravatar</a> image associated with your registered e-mail address.</p>
+                <p>Is it okay to use this photo?</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="ui modal" id="modal3">
+        <i class="close icon"></i>
+        <div class="image content">
+            <div class="ui medium image">
+                <img src="E.gif">
+            </div>
+            <div class="description">
+                <div class="ui header">We've auto-chosen a profile image for you.</div>
+                <p>We've grabbed the following image from the
+                    <a href="https://www.gravatar.com" target="_blank">gravatar</a> image associated with your registered e-mail address.</p>
+                <p>Is it okay to use this photo?</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="ui modal" id="modal4">
+        <i class="close icon"></i>
+        <div class="image content">
+            <div class="ui medium image">
+                <img src="M.gif">
+            </div>
+            <div class="description">
+                <div class="ui header">We've auto-chosen a profile image for you.</div>
+                <p>We've grabbed the following image from the
+                    <a href="https://www.gravatar.com" target="_blank">gravatar</a> image associated with your registered e-mail address.</p>
+                <p>Is it okay to use this photo?</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="video-wrapper">
+        <div class="item1">1
+        </div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+        <div class="item4">4</div>
+        <div class="item5">5</div>
+        <div class="item6">6</div>
+        <div class="item7">7</div>
+    </div>
+
+    <div class="map-wrapper">
+        <div id="map"></div>
+
+        <div class="map-sidebar">
+            <ul>
+                <li>
+                    <a class="marker1">The Ellis Bridge Gymkhana,near law garden</a>
+                </li>
+                <li>
+                    <a class="marker2">Gulmohar Greens,Thaltej</a>
+                </li>
+                <li>
+                    <a class="marker3">The Cafe Baraco, Sindhu bhavan</a>
+                </li>
+                <li>
+                    <a class="marker4">The Cafe Baraco, Prahladnagar</a>
+                </li>
+                <li>
+                    <a class="marker5">Cafe Pepparazi, Panjra pol</a>
+                </li>
+                <li>
+                    <a class="marker6">The Cafe Baraco,Memnagar</a>
+                </li>
+                <li>
+                    <a class="marker7">The Hide Out Cafe,Law garden</a>
+                </li>
+                <li>
+                    <a class="marker8">Cafe Raisins,Bodakdev</a>
+                </li>
+                <li>
+                    <a class="marker9">Rest. Ratatouille,Sindhu bhavan road</a>
+                </li>
+                <li>
+                    <a class="marker10">Cafe Varietea,Prahladnagar</a>
+                </li>
+                <li>
+                    <a class="marker11">Cafe Varietea, Sindhu bhavan</a>
+                </li>
+                <li>
+                    <a class="marker12">Cafe Varietea, Sindhu bhavan</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="customer-logos">
+        <div class="slide">
+            <img src="1.png">
+        </div>
+        <div class="slide">
+            <img src="2.png">
+        </div>
+        <div class="slide">
+            <img src="3.png">
+        </div>
+        <div class="slide">
+            <img src="4.png">
+        </div>
+        <div class="slide">
+            <img src="5.png">
+        </div>
+        <div class="slide">
+            <img src="6.png">
+        </div>
+        <div class="slide">
+            <img src="7.png">
+        </div>
+        <div class="slide">
+            <img src="8.png">
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <div class="grid-container-footer">
+            <div class="paddingleft">
+            </div>
+            <div class="bottom-logo">
+                <img src="logo-footer.jpg" id="logobot">
+            </div>
+            <div class="email">
+                <i class="fa fa-envelope-o" aria-hidden="true" id="emailicon"></i>
+                <p id="emailcontent">sale@vivodesportes</p>
+            </div>
+            <div class="phone">
+                <i class="fa fa-phone" id="phoneicon"></i>
+                <p id="phonecontent">9687063521</p>
+            </div>
+            <div class="menu">
+                <h1>Menu</h1>
+            </div>
+            <div class="paddintop">
+            </div>
+            <div class="paddingbottom">
+            </div>
+            <div class="home">
+                <p>Home</p>
+            </div>
+            <div class="content">
+                <p>3D Content</p>
+            </div>
+            <div class="product">
+                <p>Product</p>
+            </div>
+            <div class="team">
+                <p>Team</p>
+            </div>
+            <div class="contanctus">
+                <p>Contact Us</p>
+            </div>
+            <div class="paddingright">
+            </div>
+            <div class="social">
+                <h2>Social Media</h2>
+                <ul id="footer-list">
+                    <li>
+                        <i class="facebook square icon"></i>
+                    </li>
+                    <li>
+                        <i class="instagram icon"></i>
+                    </li>
+                    <li>
+                        <i class="twitter icon"></i>
+                    </li>
+                    <li>
+                        <i class="youtube icon"></i>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.1/semantic.min.js"></script>
 <script src="script.js"></script>
 <script src="ModalPopup.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-0WZ-ZikjjVlB0wyWbfmrIEVJc6KjZ0E&callback=initMap"async defer></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-0WZ-ZikjjVlB0wyWbfmrIEVJc6KjZ0E&callback=initMap" async
+    defer></script>
 <script src="mapsJs.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
 <script src="partner.js"></script>
@@ -288,4 +329,5 @@
 
 
 </script>
+
 </html>
