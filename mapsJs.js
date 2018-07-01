@@ -1,11 +1,14 @@
 function initMap() {
+ 
   var options = {
     zoom: 12,
+    
     /*higher more depht*/
     center: {
       lat: 23.0225,
       lng: 72.5714
     },
+    
     styles: [
 
       {
@@ -162,7 +165,7 @@ function initMap() {
 
   }
   var map = new google.maps.Map(document.getElementById('map'), options);
-
+  var markers = new Array();
 
   //Marker code
   addMarker({
@@ -258,13 +261,18 @@ function initMap() {
     content: '<h3>Cafe Varietea<h5 style="margin-top:-10px">Sindhu bhavan,&nbsp;&nbsp;Ahmedabad</h5><h3>',
   });
 
-
+  
   function addMarker(props) {
-    var marker = new google.maps.Marker({
+
+      var marker = new google.maps.Marker({
       position: props.coords,
       icon: 'myicon.png',
       map: map,
     });
+
+    markers.push(marker);
+   
+
     if (props.iconImage) {
       marker.setIcon(props.iconImage);
     }
@@ -273,7 +281,7 @@ function initMap() {
         content: props.content
       });
 
-      marker.addListener('click', function () {
+      marker.addListener('click', function() {
         infoWindow.open(map, marker);
       })
     }
@@ -285,6 +293,7 @@ function initMap() {
       lng: 72.5579489
     });
     map.setZoom(15);
+    google.maps.event.trigger(markers[0], 'click');
   });
 
   $('.marker2').click(function () {
@@ -294,6 +303,7 @@ function initMap() {
       lng: 72.5047445
     });
     map.setZoom(15);
+    google.maps.event.trigger(markers[1], 'click');
   });
   $('.marker3').click(function () {
     // parse lat and lng from the divs data attribute  
@@ -302,6 +312,7 @@ function initMap() {
       lng: 72.5021108
     });
     map.setZoom(15);
+    google.maps.event.trigger(markers[2], 'click');
   });
   $('.marker4').click(function () {
     // parse lat and lng from the divs data attribute  
@@ -310,6 +321,7 @@ function initMap() {
       lng: 72.5132806
     });
     map.setZoom(15);
+    google.maps.event.trigger(markers[3], 'click');
   });
   $('.marker5').click(function () {
     // parse lat and lng from the divs data attribute  
@@ -318,6 +330,7 @@ function initMap() {
       lng: 72.5266346
     });
     map.setZoom(15);
+    google.maps.event.trigger(markers[4], 'click');
   });
   $('.marker6').click(function () {
     // parse lat and lng from the divs data attribute  
@@ -326,6 +339,7 @@ function initMap() {
       lng: 72.5483519
     });
     map.setZoom(15);
+    google.maps.event.trigger(markers[5], 'click');
   });
   $('.marker7').click(function () {
     // parse lat and lng from the divs data attribute  
@@ -334,6 +348,7 @@ function initMap() {
       lng: 72.5580053
     });
     map.setZoom(15);
+    google.maps.event.trigger(markers[6], 'click');
   });
   $('.marker8').click(function () {
     // parse lat and lng from the divs data attribute  
@@ -342,6 +357,7 @@ function initMap() {
       lng: 72.5032821
     });
     map.setZoom(15);
+    google.maps.event.trigger(markers[7], 'click');
   });
   $('.marker9').click(function () {
     // parse lat and lng from the divs data attribute  
@@ -350,6 +366,7 @@ function initMap() {
       lng: 72.507391
     });
     map.setZoom(15);
+    google.maps.event.trigger(markers[8], 'click');
   });
   $('.marker10').click(function () {
     // parse lat and lng from the divs data attribute  
@@ -358,6 +375,7 @@ function initMap() {
       lng: 72.510229
     });
     map.setZoom(15);
+    google.maps.event.trigger(markers[9], 'click');
   });
   $('.marker11').click(function () {
     // parse lat and lng from the divs data attribute  
@@ -366,6 +384,7 @@ function initMap() {
       lng: 72.5072303
     });
     map.setZoom(15);
+    google.maps.event.trigger(markers[10], 'click');
   });
   $('.marker12').click(function () {
     // parse lat and lng from the divs data attribute  
@@ -374,5 +393,6 @@ function initMap() {
       lng: 72.6069243
     });
     map.setZoom(15);
+    google.maps.event.trigger(markers[11], 'click');
   });
 }
