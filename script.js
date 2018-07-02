@@ -25,7 +25,7 @@ $(window).scroll(function() {
     var abc = document.getElementById('navwrap');
     if ($(this).scrollTop() > 400) {
         $(abc).css({
-            "background-color":"#6699ff",
+            "background-color":"rgb(22,24,29)",
             "transition":"1s"
         })
     } else {

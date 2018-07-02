@@ -13,7 +13,6 @@ nav .nav-wrapper {
     position: relative;
     height: auto;
     min-height: 56px;
-    
 }
 
 nav .sidenav-trigger {
@@ -36,7 +35,28 @@ nav .brand-logo {
     left:2vw;
     height:70px;
 }
+.menu-vertical{
+    color:white;
+
+}
 #main-nav{  
+    margin:1.3vw 20vw;
+    float: left;
+}
+
+#follow-us{
+    transition: background-color .3s;
+    font-size: 1.3rem;
+    display: block;
+    padding: 0 15px 0px 30px;;
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    line-height: 56px !important;
+}
+.youtube-top-icon,.twit-top-icon,.insta-top-icon{
+    color:white;
+    font-size:1.0em;
 }
 nav ul {
     margin: 0
@@ -174,3 +194,5 @@ nav .sidenav-trigger {
         display: none !important
     }
 }
+
+
