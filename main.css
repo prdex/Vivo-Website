@@ -63,11 +63,9 @@ body{
     height: 600px;
 }
 .map-sidebar{
-    width:34%;
     margin-right: 0.5%;
     height:600px;
     position: relative;
-    float:right;
     border:2px solid grey;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -77,6 +75,9 @@ body{
 }
 .story:hover{
     color:black;
+}
+.menu-hor-line{
+    width:100%;
 }
 
 
